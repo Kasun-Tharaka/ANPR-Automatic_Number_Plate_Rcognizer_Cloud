@@ -1,0 +1,23 @@
+this project has implemented using tensorflow 1.x..., so do not use this, try to do it using such as yolo, detectron 
+like those.
+
+first creat a model to detect the car numberplates(can be yolo or detectron or any other model)
+using opencv save it image directory
+
+after detection, cropted image or bounding box(bbox coordinates) pass to the extraion of numbers from the image 
+model(OCR) here it done with google api(google OCR - cloud ocr).
+
+OCR => Optical Charactor Recognizer
+
+this problem statement, OCR apply top of object detection
+
+in this project, data annotation part, we hve done 2 step annotation and verification
+* first annotate the whole plate
+* annotate the each of charactors of the plate
+
+then create a logic to compare predicted value from OCR with actual annotated values to comfirm.
+
+
+
+
+

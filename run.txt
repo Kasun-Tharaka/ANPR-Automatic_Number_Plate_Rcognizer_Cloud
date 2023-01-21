@@ -1,0 +1,21 @@
+run rest-server.py and open the postman
+
+take new tab and make it POST methode, give address with port number and route name
+
+then in postman, body tab select json file, and write json file to pass tha data to application
+we cannot pass the image as well as in json, it should be passed as base format
+
+to pass as the image in json file, image should convert into encription format. a one of way to do it using base64.
+using base 64 convert image into base64 format and pass as the image in json file
+
+send the request, system will detect the number plate and crop it, as the output(base64) cropped plate will give.
+u can decode and see the just numberplate.
+
+also the system will generate the number of the plate as aString.
+
+if u got internal server error 500, then just go line 52 of rest-server.py, it has passed 'key', change into 'image'.
+
+but if u hve change it u will not get any response. bcz u have to use google api, in getNumberPlateValue.py
+change ur google api number.
+
+PAUL's api key: AIzaSyAmNrVPJqp9XAk9Lm2Baej3o4nCKziN8mY
